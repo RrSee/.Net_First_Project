@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WebApplication1.Entities.HotMeal>
+
+<!DOCTYPE html>
+
+<html>
+	<head></head>
+	<body>
+	@foreach(var item in Model)
+	{
+		<div>
+			<h3>Id : @item.id</h3>
+			<p>Name : @item.name</p>
+			<p>Price : @item.price</p>
+
+		</div>
+	}
+</body>
+</html>
